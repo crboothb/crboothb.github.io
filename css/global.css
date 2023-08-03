@@ -22,6 +22,7 @@ body {
 	font-size: 1.1em;
 	background-color: #ececec;
 	overflow-y: scroll;
+	margin: 0;
 }
 a {
 	color:#006ddb;
@@ -236,14 +237,19 @@ the dropdowns
 }
 #mobile_nav .nav_link{
 }
+#mobile_nav:checked + .dropdown_list {
+	display: block;
+}
+
 #mobile_logo_nav {
 	height:5vh;
+	width: auto;
 	float:left;
 }
 .mobile_drop {
 	border-radius:0px 0px 8px 8px;
 	border-top:1px solid #999999;
-	width:100%;
+	width:50%;
 	top:4vh;
 	margin:0;
 	border:0;
@@ -251,14 +257,19 @@ the dropdowns
 	box-shadow:none;
 	padding:0;
 	border-bottom:2px solid #595959;
+	border-right:2px solid #595959;
 }
 #mobile_nav .dropdown_container:before, #mobile_nav .dropdown_container:after {
 	display:none;
 }
-.dropdown_container li {
+.dropdown_list {
+	list-style-type:none;
+	padding:0;
+}
+.dropdown_list_item {
 	width:100%;
-	margin:0 auto;
-	padding-top:5px;
+	padding:5px 0px;
+	margin:0;	
 }
 #mobile_nav_link {
 	color: #333333;
@@ -273,9 +284,7 @@ the dropdowns
 #mobile_nav_link:hover {
 	background-color: rgb(206, 200, 208);
 }
-.pure-menu-list{
-	width:100%;
-}
+
 /*------------------------------------------------------*/
 /* Contact logo grid styles */
 .logo_links {
@@ -351,7 +360,11 @@ the dropdowns
 }
 /*------------------------------------------------------*/
 /* Grid spacing styles */
-#sep_div {
+.sep_div_small {
+	height:2vh;
+}
+
+.sep_div {
 	height:5vh;
 }
 #vert_line{

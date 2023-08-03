@@ -4,7 +4,7 @@
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel='shortcut icon' href='img/favicon.ico' type='image/x-icon' />
-	<link type="text/css" rel="stylesheet" href="css/pure.css" media="screen,projection" />
+	<link type="text/css" rel="stylesheet" href="css/grid.css" media="screen,projection" />
 	<link type="text/css" rel="stylesheet" href="css/global.css" media="screen,projection" />
 	<link type="text/css" rel="stylesheet" href="css/index.css" media="screen,projection" />
 	<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
@@ -12,16 +12,16 @@
 </head>
 
 <body>
-	<div class="pure-g" id="desktop_nav">
+	<div class="row" id="desktop_nav">
 		<!-- <div class="pure-u-4-24" id="margin"></div> -->
-		<div class="pure-u-3-24" id="nav_link_cell"><a class="nav_link" href="#about">About</a></div>
-		<div class="pure-u-3-24" id="nav_link_cell"><a class="nav_link" href="#research">Research</a></div>
-		<div class="pure-u-3-24" id="nav_link_cell"><a class="nav_link" href="#pubs">Publications</a></div>
-		<div class="pure-u-3-24" id="nav_link_cell"><a class="nav_link" href="#pres">Presentations</a></div>
-		<div class="pure-u-3-24" id="nav_link_cell"><a class="nav_link" href="#teaching">Teaching</a></div>
-		<div class="pure-u-3-24" id="nav_link_cell"><a class="nav_link" href="#random">Other Interests</a></div>
-		<div class="pure-u-3-24" id="nav_link_cell"><a class="nav_link" href="#contact">Contact</a></div>
-		<div class="pure-u-3-24" id="nav_link_cell"><a class="nav_link" href="#updates">Updates</a></div>
+		<div class="col-3-24" id="nav_link_cell"><a class="nav_link" href="#about">About</a></div>
+		<div class="col-3-24" id="nav_link_cell"><a class="nav_link" href="#research">Research</a></div>
+		<div class="col-3-24" id="nav_link_cell"><a class="nav_link" href="#pubs">Publications</a></div>
+		<div class="col-3-24" id="nav_link_cell"><a class="nav_link" href="#pres">Presentations</a></div>
+		<div class="col-3-24" id="nav_link_cell"><a class="nav_link" href="#teaching">Teaching</a></div>
+		<div class="col-3-24" id="nav_link_cell"><a class="nav_link" href="#random">Other Interests</a></div>
+		<div class="col-3-24" id="nav_link_cell"><a class="nav_link" href="#contact">Contact</a></div>
+		<div class="col-3-24" id="nav_link_cell"><a class="nav_link" href="#updates">Updates</a></div>
 
 		<!-- <div class="pure-u-2-24 dropdown" id="nav_link_cell">
 			<a href="archive.html" class="nav_link">Updates</a>
@@ -40,25 +40,25 @@
 		<!-- <div class="pure-u-4-24" id="margin"></div> -->
 	</div>
 
-	<div class="pure-g" id="mobile_nav">
-		<div class="pure-u-24-24 dropdown" id="nav_link_cell">
-			<a href="#" class="nav_link"><img class="pure_img" id="mobile_logo_nav" src="img/logo-mobile.png"></a>
+	<div class="row" id="mobile_nav">
+		<div class="col-24-24 dropdown" id="nav_link_cell">
+			<a href="#" class="nav_link"><img id="mobile_logo_nav" src="img/logo-mobile.png"></a>
 			<div class="dropdown_container mobile_drop">
-				<ul class="pure-menu-list">
-					<li><a href="#about" id="mobile_nav_link">About</a></li>
-					<li><a href="#research" id="mobile_nav_link">Research</a></li>
-					<li><a href="#pubs" id="mobile_nav_link">Publications</a></li>
-					<li><a href="#pres" id="mobile_nav_link">Presentations</a></li>
-					<li><a href="#teaching" id="mobile_nav_link">Teaching</a></li>
-					<li><a href="#random" id="mobile_nav_link">Other Interests</a></li>
-					<li><a href="#contact" id="mobile_nav_link">Contact</a></li>
-					<li><a href="#updates" id="mobile_nav_link">Updates</a></li>
+				<ul class="dropdown_list">
+					<li class="dropdown_list_item"><a href="#about" id="mobile_nav_link">About</a></li>
+					<li class="dropdown_list_item"><a href="#research" id="mobile_nav_link">Research</a></li>
+					<li class="dropdown_list_item"><a href="#pubs" id="mobile_nav_link">Publications</a></li>
+					<li class="dropdown_list_item"><a href="#pres" id="mobile_nav_link">Presentations</a></li>
+					<li class="dropdown_list_item"><a href="#teaching" id="mobile_nav_link">Teaching</a></li>
+					<li class="dropdown_list_item"><a href="#random" id="mobile_nav_link">Other Interests</a></li>
+					<li class="dropdown_list_item"><a href="#contact" id="mobile_nav_link">Contact</a></li>
+					<li class="dropdown_list_item"><a href="#updates" id="mobile_nav_link">Updates</a></li>
 				</ul>
 			</div>
 		</div>
 	</div>
 
-	<div class="pure-g" id="name_row">
+	<!-- <div class="pure-g" id="name_row">
 		<div class="pure-u-4-24" id="name_margin">
 			<div id="hidden"><img src="img/axolotl-left.png"></div>
 		</div>
@@ -71,134 +71,170 @@
 		<div class="pure-u-4-24" id="name_margin">
 			<div id="hidden"><img src="img/axolotl-right.png"></div>
 		</div>
-	</div>
+	</div> -->
 
-	<div class="pure-u-24-24" id="sep_div"></div>
+	<div class="col-24-24" id="sep_div"></div>
 
-	<div class="pure-g" id="main_div">
-		<!-- <div class="pure-u-24-24" id="header">Bio</div> -->
-		<div class="pure-u-4-24" id="margin"></div>
-		<div class="pure-u-16-24" id="main_text">
-			<div class="pure-g">
-				<div class="pure-u-24-24" id="main_row">
-					<div id="main_img_cont">
-						<img class="pure-img" id="main_img" src="img/me4.jpg">
+	<div class="row" id="main_div">
+		<div class="col-4-24" id="margin"></div>
+		<div class="col-16-24" id="main_text">
+			<a class="anc_link" name="about">
+				<div class="section_header_cont">
+					<div class="section_header">Clara Boothby, PhD</div>
+				</div>
+			</a>
+
+			<div class="row" id="bio_row">
+
+				<div class="col-5-24" id="main_img_cont">
+					<img id="main_img" src="img/me4.jpg">
+				</div>
+
+				<div class="col-1-24" id="margin"></div>
+
+				<div class="col-18-24" id="main_desc">
+					<div class="row" id="educ_cont">
+						<div class="col-20-24" id="educ_row">
+							<div id="educ_header">
+								ORISE Fellow for Science Technology, and Innovation Analysis
+							</div>
+							<div id="educ_info"><a href="https://www.ncses.nsf.gov/" target="_blank">National Center for Science and Engineering Statistics</a></div>
+							<div id="educ_info"><a href="https://www.nsf.gov/" target="_blank">National Science Foundation</a></div>
+							<div id="educ_info">Alexandria, VA</div>
+						</div>
+						<div class="col-4-24" id="educ_date">
+							2022&#8211;present
+						</div>
 					</div>
-					<div class="pure-u-1-24" id="margin"></div>
-					<div id="main_desc">
-						<div class="pure-g" id="educ_cont">
-							<div class="pure-u-20-24" id="educ_row">
-								<div id="educ_header">
-									Doctor of Philosophy, Informatics (<a href="https://ccs.sice.indiana.edu/"
-										target="_blank">Computing, Culture, and Society track</a>)
-									Minor: Complex Systems
-								</div>
-								<div id="educ_info">Indiana University</div>
-								<div id="educ_info">Bloomington, IN</div>
+
+					<div class="educ_sep"></div>
+
+					<div class="row" id="educ_cont">
+						<div class="col-20-24" id="educ_row">
+							<div id="educ_header">
+								Doctor of Philosophy, Informatics (<a href="https://ccs.sice.indiana.edu/"
+									target="_blank">Computing, Culture, and Society track</a>)
+								Minor: Complex Systems
 							</div>
-							<div class="pure-u-4-24" id="educ_date">
-								2017&#8211;present
-							</div>
+							<div id="educ_info">Indiana University</div>
+							<div id="educ_info">Bloomington, IN</div>
 						</div>
-
-						<div class="educ_sep"></div>
-
-						<div class="pure-g" id="educ_cont">
-							<div class="pure-u-20-24" id="educ_row">
-								<div id="educ_header">Master of Arts, English Literature</div>
-								<div id="educ_info">Indiana University</div>
-								<div id="educ_info">Bloomington, IN</div>
-							</div>
-							<div class="pure-u-4-24" id="educ_date">
-								2014&#8211;2016
-							</div>
+						<div class="col-4-24" id="educ_date">
+							2017&#8211;2022
 						</div>
+					</div>
 
-						<div class="educ_sep"></div>
+					<div class="educ_sep"></div>
 
-						<div class="pure-g" id="educ_cont">
-							<div class="pure-u-20-24" id="educ_row">
-								<div id="educ_header">Bachelor of Arts, English</div>
-								<div id="educ_info">City College</div>
-								<div id="educ_info">New York, NY</div>
-							</div>
-							<div class="pure-u-4-24" id="educ_date">
-								2009&#8211;2013
-							</div>
+					<div class="row" id="educ_cont">
+						<div class="col-20-24" id="educ_row">
+							<div id="educ_header">Master of Arts, English Literature</div>
+							<div id="educ_info">Indiana University</div>
+							<div id="educ_info">Bloomington, IN</div>
 						</div>
-
-						<div class="educ_sep"></div>
-
-						<div class="pure-g" id="link_row">
-							<div class="pure-u-11-24"></div>
-							<div class="pure-u-2-24" id="link_cont"><a href="https://github.com/crboothb"
-									target="_blank" class="contact_btn">Github</a></div>
-							<div class="pure-u-11-24"></div>
-							<!-- <div class="pure-u-8-24"></div>
-							<div class="pure-u-2-24" id="link_cont">Github</div>
-							<div class="pure-u-1-24" id="link_cont">&deg;</div>
-							<div class="pure-u-2-24" id="link_cont">Twitter</div>
-							<div class="pure-u-1-24" id="link_cont">&deg;</div>
-							<div class="pure-u-2-24" id="link_cont">Scholar</div>
-							<div class="pure-u-8-24"></div> -->
+						<div class="col-4-24" id="educ_date">
+							2014&#8211;2016
 						</div>
+					</div>
+
+					<div class="educ_sep"></div>
+
+					<div class="row" id="educ_cont">
+						<div class="col-20-24" id="educ_row">
+							<div id="educ_header">Bachelor of Arts, English</div>
+							<div id="educ_info">City College</div>
+							<div id="educ_info">New York, NY</div>
+						</div>
+						<div class="col-4-24" id="educ_date">
+							2009&#8211;2013
+						</div>
+					</div>
+
+					<div class="educ_sep"></div>
+					<div class="sep_div_small"></div>
+
+					<div class="row" id="link_row">
+						<div class="col-11-24"></div>
+						<div class="col-2-24" id="link_cont"><a href="https://github.com/crboothb"
+								target="_blank" class="contact_btn">Github</a></div>
+						<div class="col-11-24"></div>
 					</div>
 				</div>
 			</div>
+
+			<!----------------------------------------->
+
+			<div class="sep_div_small"></div>
 
 			<a class="anc_link" name="about">
 				<div class="section_header_cont">
 					<div class="section_header">About me</div>
 				</div>
 			</a>
-			<div class="pure-g">
-				<div class="pure-u-24-24" id="content_row">
+			<div class="row">
+				<div class="col-24-24" id="content_row">
 					<div id="content_text">
-						Hi! My name is Clara Boothby. I'm a third year PhD student in Informatics at Indiana University.
+						Hi! My name is Clara Boothby. I'm an <a href="https://orise.orau.gov/ncses/" target="_blank">ORISE Fellow</a> 
+						in the National Center for Science and Engineering Statistics, at the National Science Foundation.
 					</div>
 				</div>
 			</div>
+
+			<!----------------------------------------->
+
+			<div class="sep_div_small"></div>
 
 			<a class="anc_link" name="research">
 				<div class="section_header_cont">
 					<div class="section_header">Research Interests</div>
 				</div>
 			</a>
-			<div class="pure-g">
-				<div class="pure-u-24-24" id="content_row">
+			<div class="row">
+				<div class="col-24-24" id="content_row">
 					<div id="content_text">
 						My research interests cover a broad variety of topics that generally fit under the category
-						of science communication. I'm interested in how the infrastructure of scientific research
-						has formed and continues to change over time. Understanding the history and patterns
-						in science can help us understand how to present scientific knowledge efficiently and
-						can provide ways to overcome the vast amounts of disinformation being presented daily in
-						modern internet. I am involved in the following projects.
+						of scientific research careers in the context of team science. I'm interested in how the 
+						infrastructure of scientific research has formed and continues to change over time. I am involved in the following projects.
 						<ul>
 							<li> Science Genome, PI: YY Ahn</li>
 							<li> Author Trajectories in Embedding Space</li>
+							<li> Project Roles and Career Training in a Team Science Environment</li>
 							<li> The Replacement Rate of the Scientific Workforce</li>
 							<li> Credibility of Science Information on Online platforms</li>
 							<li> Text Analysis of Career Editorials</li>
-							<li> Axolotls</li>
-							<!-- <li> China science networks</li> -->
 						</ul>
 					</div>
 				</div>
 			</div>
+
+			<!----------------------------------------->
+
+			<div class="sep_div_small"></div>
 
 			<a class="anc_link" name="pubs">
 				<div class="section_header_cont">
 					<div class="section_header">Publications</div>
 				</div>
 			</a>
-			<div class="pure-g">
-				<div class="pure-u-24-24" id="content_row">
+			<div class="row">
+				<div class="col-24-24" id="content_row">
 					<div id="content_text">
 						<!-- <div class="pure-u-24-24" id="sep_div"></div> -->
 						<!-- <div class="tea_sep"></div> -->
 
-						<div class="pure-g" id="tea_cont">
-							<div class="pure-u-24-24" id="tea_row">
+						<div class="row" id="tea_cont">
+							<div class="col-24-24" id="tea_row">
+								Boothby, C., Milojevic, S., Larivière, V., Radicchi, F., Sugimoto, C., 
+								(preprint). Consistent churn of early career researchers: an analysis of turnover 
+								and replacement in the scientific workforce.
+								https://doi.org/10.31219/osf.io/hdny6
+
+							</div>
+						</div>
+						<div class="tea_sep"></div>
+
+						<div class="row" id="tea_cont">
+							<div class="col-24-24" id="tea_row">
 								Boothby, C., & Milojević, S. (2021). An exploratory full-text analysis of Science
 								Careers in a changing academic job market. Scientometrics.
 								https://doi.org/10.1007/s11192-021-03905-2
@@ -207,8 +243,8 @@
 						</div>
 						<div class="tea_sep"></div>
 
-						<div class="pure-g" id="tea_cont">
-							<div class="pure-u-24-24" id="tea_row">
+						<div class="row" id="tea_cont">
+							<div class="col-24-24" id="tea_row">
 								Boothby, C., Murray, D., Polovick, A., Tsou, A., Sugimoto, C. R. (In Revisions)
 								Credibility of Scientific Information on Social Media.
 								Proceedings of the Social Media Society Conference 2020.
@@ -217,8 +253,8 @@
 						</div>
 						<div class="tea_sep"></div>
 
-						<div class="pure-g" id="tea_cont">
-							<div class="pure-u-24-24" id="tea_row">
+						<div class="row" id="tea_cont">
+							<div class="col-24-24" id="tea_row">
 								Paolillo, J. C., Harper, B., Boothby, C., & Axelrod, D. (2020, January 7). YouTube
 								Children’s Videos: Development of a Genre under Algorithm. Proceedings of the Hawaii
 								International Conference on System Sciences 2020. Hawaii International Conferences on
@@ -227,8 +263,8 @@
 						</div>
 						<div class="tea_sep"></div>
 
-						<div class="pure-g" id="tea_cont">
-							<div class="pure-u-24-24" id="tea_row">
+						<div class="row" id="tea_cont">
+							<div class="col-24-24" id="tea_row">
 								Murray, D., Boothby, C., Zhao, H., Minik, V., Bérubé, N., Larivière, V., & Sugimoto, C.
 								R. (2019). Exploring the personal and professional factors associated with student
 								evaluations of teachers. SocArXiv
@@ -240,29 +276,33 @@
 				</div>
 			</div>
 
+			<!----------------------------------------->
+
+			<div class="sep_div_small"></div>
+
 			<a class="anc_link" name="pres">
 				<div class="section_header_cont">
 					<div class="section_header">Presentations</div>
 				</div>
 			</a>
-			<div class="pure-g">
-				<div class="pure-u-24-24" id="content_row">
+			<div class="row">
+				<div class="col-24-24" id="content_row">
 					<div id="content_text">
 						<!-- <div class="pure-u-24-24" id="sep_div"></div> -->
 						<!-- <div class="tea_sep"></div> -->
 
-						<div class="pure-g" id="tea_cont">
-							<div class="pure-u-24-24" id="tea_row">
+						<div class="row" id="tea_cont">
+							<div class="col-24-24" id="tea_row">
 								Boothby, C., Milojević, S., Lariviere, V., John Walsh, Filippo Radicchi, & Sugimoto, C.
-								R., (Upcoming) “Stability through Constant Turnover: The Replacement Rate of the
+								R., (2021) “Stability through Constant Turnover: The Replacement Rate of the
 								Scientific Workforce.” 18th Annual Conference on Scientometrics and Informetrics. Travel
 								award.
 							</div>
 						</div>
 						<div class="tea_sep"></div>
 
-						<div class="pure-g" id="tea_cont">
-							<div class="pure-u-24-24" id="tea_row">
+						<div class="row" id="tea_cont">
+							<div class="col-24-24" id="tea_row">
 								Boothby, C., Milojević, S., Lariviere, V., & Sugimoto, C. R., (2020, October 23)
 								“The Replacement Rate of Academic Science is Consistent over Time Because Younger
 								Scientists are not Retained.” ASIS&T, SIG-MET meeting.
@@ -271,8 +311,8 @@
 						</div>
 						<div class="tea_sep"></div>
 
-						<div class="pure-g" id="tea_cont">
-							<div class="pure-u-24-24" id="tea_row">
+						<div class="row" id="tea_cont">
+							<div class="col-24-24" id="tea_row">
 								Boothby, C., Milojević, S. (2020, March 28). “Don’t tell me what to do!”: A Full-Text
 								Analysis of Science Careers in a Changing Academic Job Market. Common Ground: The Fourth
 								Annual Media School Graduate Conference
@@ -280,8 +320,8 @@
 						</div>
 						<div class="tea_sep"></div>
 
-						<div class="pure-g" id="tea_cont">
-							<div class="pure-u-24-24" id="tea_row">
+						<div class="row" id="tea_cont">
+							<div class="col-24-24" id="tea_row">
 								Paolillo, J. C., Harper, B., Boothby, C., & Axelrod, D. (2020, January 7). YouTube
 								Children’s Videos: Development of a Genre under Algorithm. Hawaii International
 								Conference on System Sciences 2020.
@@ -289,8 +329,8 @@
 						</div>
 						<div class="tea_sep"></div>
 
-						<div class="pure-g" id="tea_cont">
-							<div class="pure-u-24-24" id="tea_row">
+						<div class="row" id="tea_cont">
+							<div class="col-24-24" id="tea_row">
 								Chen, P. Y., Boothby, C. (2019, November 2) Patterns of Regional Scientific
 								Collaboration between China & Hong Kong: A Longitudinal, Institution-Level Analysis.
 								Information and Library Science Doctoral Forum at Indiana University. Awarded Third
@@ -299,8 +339,8 @@
 						</div>
 						<div class="tea_sep"></div>
 
-						<div class="pure-g" id="tea_cont">
-							<div class="pure-u-24-24" id="tea_row">
+						<div class="row" id="tea_cont">
+							<div class="col-24-24" id="tea_row">
 								Boothby, C., Murray, D., Polovick, A., Tsou, A., Sugimoto, C. R. (2019, March 29).
 								Credibility of Scientific Information on Social Media. Common Ground: The Third Annual
 								Media School Graduate Conference.
@@ -312,77 +352,80 @@
 				</div>
 			</div>
 
+			<!----------------------------------------->
+
+			<div class="sep_div_small"></div>
 
 			<a class="anc_link" name="teaching">
 				<div class="section_header_cont">
 					<div class="section_header">Teaching</div>
 				</div>
 			</a>
-			<div class="pure-g">
-				<div class="pure-u-24-24" id="content_row">
+			<div class="row">
+				<div class="col-24-24" id="content_row">
 					<div id="content_text">
 						I have been an Associate Instructor for the following courses
-						<div class="pure-u-24-24" id="sep_div"></div>
+						<div class="col-24-24" id="sep_div"></div>
 						<div class="tea_sep"></div>
 
-						<div class="pure-g" id="tea_cont">
-							<div class="pure-u-7-24" id="tea_row">
+						<div class="row" id="tea_cont">
+							<div class="col-7-24" id="tea_row">
 								Informatics I501: Introduction to Informatics
 							</div>
-							<div class="pure-u-1-24" id="margin"></div>
-							<div class="pure-u-2-24" id="tea_row">
+							<div class="col-1-24" id="margin"></div>
+							<div class="col-2-24" id="tea_row">
 								Fall 2019
 							</div>
-							<div class="pure-u-1-24" id="margin"></div>
-							<div class="pure-u-13-24" id="tea_row">
+							<div class="col-1-24" id="margin"></div>
+							<div class="col-13-24" id="tea_row">
 								Assisted the lead instructor, and led a series of weekly professionalization talks
 							</div>
 						</div>
 						<div class="tea_sep"></div>
 
-						<div class="pure-g" id="tea_cont">
-							<div class="pure-u-7-24" id="tea_row">
+						<div class="row" id="tea_cont">
+							<div class="col-7-24" id="tea_row">
 								Informatics I222: The Information Society
 							</div>
-							<div class="pure-u-1-24" id="margin"></div>
-							<div class="pure-u-2-24" id="tea_row">
+							<div class="col-1-24" id="margin"></div>
+							<div class="col-2-24" id="tea_row">
 								Fall 2018
 								Spring 2019
 							</div>
-							<div class="pure-u-1-24" id="margin"></div>
-							<div class="pure-u-13-24" id="tea_row">
+							<div class="col-1-24" id="margin"></div>
+							<div class="col-13-24" id="tea_row">
 								Grading. Presented a guest lecture on Science Metrics
 							</div>
 						</div>
 						<div class="tea_sep"></div>
 
-						<div class="pure-g" id="tea_cont">
-							<div class="pure-u-7-24" id="tea_row">
+						<div class="row" id="tea_cont">
+							<div class="col-7-24" id="tea_row">
 								Informatics I453: Computer and Information Ethics
 							</div>
-							<div class="pure-u-1-24" id="margin"></div>
-							<div class="pure-u-2-24" id="tea_row">
+							<div class="col-1-24" id="margin"></div>
+							<div class="col-2-24" id="tea_row">
 								Fall 2017
 								Spring 2018
 							</div>
-							<div class="pure-u-1-24" id="margin"></div>
-							<div class="pure-u-13-24" id="tea_row">
+							<div class="col-1-24" id="margin"></div>
+							<div class="col-13-24" id="tea_row">
 								Assisted the lead instructor. Grading. Led several lessons
 							</div>
 						</div>
 						<div class="tea_sep"></div>
 
-						<div class="pure-g" id="tea_cont">
-							<div class="pure-u-7-24" id="tea_row">
+						<div class="row" id="tea_cont">
+							<div class="col-7-24" id="tea_row">
 								English W131: Elementary Composition
 							</div>
-							<div class="pure-u-1-24" id="margin"></div>
-							<div class="pure-u-2-24" id="tea_row">
+							<div class="col-1-24" id="margin"></div>
+							<div class="col-2-24" id="tea_row">
 								Fall 2015
 								Spring 2016
 							</div>
-							<div class="pure-u-1-24" id="margin"></div>
-							<div class="pure-u-13-24" id="tea_row">
+							<div class="col-1-24" id="margin"></div>
+							<div class="col-13-24" id="tea_row">
 								designed and led all course sessions
 							</div>
 						</div>
@@ -391,13 +434,17 @@
 				</div>
 			</div>
 
+			<!----------------------------------------->
+
+			<div class="sep_div_small"></div>
+
 			<a class="anc_link" name="random">
 				<div class="section_header_cont">
 					<div class="section_header">Other Interests</div>
 				</div>
 			</a>
-			<div class="pure-g">
-				<div class="pure-u-24-24" id="content_row">
+			<div class="row">
+				<div class="col-24-24" id="content_row">
 					<div id="content_text">
 						<!-- This is random crap! -->
 						<p>&deg; I serve as an editor on the <a href="https://blogs.iu.edu/sciu/" target="_blank">SciU
@@ -411,27 +458,42 @@
 				</div>
 			</div>
 
+			<!----------------------------------------->
+
+			<div class="sep_div_small"></div>
+
 			<a class="anc_link" name="contact">
 				<div class="section_header_cont">
 					<div class="section_header">Contact</div>
 				</div>
 			</a>
-			<div class="pure-g">
-				<div class="pure-u-24-24" id="content_row">
+			<div class="row">
+				<div class="col-24-24" id="content_row">
 					<div id="content_text">
 						Email me at:&nbsp;&nbsp;&nbsp;&nbsp; <img class="pure_img" id="contact" src="img/cont.png">
 					</div>
 				</div>
 			</div>
 
+			<!----------------------------------------->
+
+			<div class="sep_div_small"></div>
+
 			<a class="anc_link" name="updates">
 				<div class="section_header_cont">
 					<div class="section_header">Updates</div>
 				</div>
 			</a>
-			<div class="pure-g">
-				<div class="pure-u-24-24" id="content_row">
+			<div class="row">
+				<div class="col-24-24" id="content_row">
 					<div id="content_text">
+
+						<h4>November 17, 2022</h4>
+						<p>I successfully defended my dissertation, "The Changing Trajectories of Academic Careers in the 
+							Environments of Team Science"! I will be working as an ORISE fellow at NCSES, and I'm excited 
+							for what's coming next.</p>
+
+						<div class="update_sep"></div>
 
 						<h4>May 6, 2021</h4>
 						<p>I will be virtually attending and presenting at ISSI 2021. I'm presenting “Stability through
@@ -439,6 +501,8 @@
 							Scientific Workforce,” on behalf of coauthors Staša Milojević, Vincent Lariviere, John
 							Walsh, Filippo Radicchi, & Cassidy Sugimoto.
 						</p>
+
+						<div class="update_sep"></div>
 
 						<h4>October 31, 2020</h4>
 						<p>I Passed my Qualifying Exams! After a lot of time spent thinking and writing about the
@@ -487,7 +551,10 @@
 				</div>
 			</div>
 
+			<!----------------------------------------->
+		
 		</div>
+		<div class="col-4-24" id="margin"></div>
 
 		<!-- <p>Contact: grthomas [at] indiana [dot] edu</p> -->
 
@@ -513,7 +580,7 @@
 	<!-- <div class="pure-u-24-24"><center><img class="pure_img" id="contact" src="img/contact/cont.png"></center></div> -->
 	<!--<div class="pure-u-10-24" id="margin"></div>-->
 
-	<div class="pure-u-24-24" id="sep_div"></div>
+	<div class="col-24-24" id="sep_div"></div>
 	<!-- 
 		<div class="pure-u-6-24" id="margin"></div>	
                 <div class="pure-u-4-24 logo_links">
@@ -540,15 +607,14 @@
                 </a>
             </div>
         </div> -->
-	<div class="pure-u-4-24" id="margin"></div>
+	<div class="col-4-24" id="margin"></div>
 	</div>
 
-	<div class="pure-g" id="footer">
-		<div class="pure-u-1">
+	<div class="row" id="footer">
+		<div class="col-1">
 			<div id="footer_text">
 				<center>Site designed and maintained by <a href="https://crboothb.github.io">Clara Boothby</a> and
-					<a href="https://gwct.github.io" target="_blank">Gregg Thomas</a> |
-					<a href="https://purecss.io/" target="_blank">Pure CSS</a> | Page built: 12/25/2019 15:47:28 MST
+					<a href="https://gwct.github.io" target="_blank">Gregg Thomas</a> | Page built: 12/25/2019 15:47:28 MST
 				</center>
 			</div>
 		</div>

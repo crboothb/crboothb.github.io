@@ -52,13 +52,15 @@
     align-items: center;
 	min-height: 83vh;
 }
-:target:before {
+/* :target:before {
 	content:" ";
 	display:block;
 	height:4vh;
 	margin:4vh;
 	visibility:hidden;
-}
+} */
+
+
 
 /* .anchor {
 	height:4vh;
@@ -105,10 +107,13 @@
 	text-align:justify;
 }
 @media (max-width: 1025px) {
-	#main_row { display:inline-block; max-height:100%; }
-	#main_img_cont { display:inline-block; width:100%; }
+	#main_div { width: 100%; }
+	#main_text { width: 90%; }
+	#bio_row { flex-wrap: wrap; }
+	#main_img_cont { display: flex; width:100%; padding-bottom: 2vh; }
 	#main_img { margin: 0 auto; max-height:25vh; }
-	#main_desc { display:inline-block; width:100%; }
+	#main_desc { display:flex; width:100%; text-align: left; }
+	#margin { width: 5%; }
 }
 /* Education styles */
 #educ_row {
@@ -145,7 +150,7 @@
 	text-align:center;
 }
 .contact_btn {
-	/* border: 1px solid #333333; */
+	border: 1px solid #006ddb;
 	/* background-color: #fff; */
 	text-decoration: none;
 	/* color: #1a1a1a; */
@@ -180,6 +185,8 @@
 }
 @media (max-width: 1025px) {
 	#tea_row { width:100%; }
+	#educ_row { width: 75%; }
+	#educ_date { width: 25%; text-align: right; }
 }
 /* Contact image styles */
 #contact {
